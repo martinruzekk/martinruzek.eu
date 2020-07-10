@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* Martine, nic tady nenajdeš */
+/* Ani ty, Štěpáne */
+html {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-container {
+  background: black;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style-type: none;
+  width: 50%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+nav ul li a {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+nav .burger {
+  display: none;
+  cursor: pointer;
+}
+
+nav .burger .line1 {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+nav .burger .line2 {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+nav .burger .line3 {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+nav #nav-logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 40px;
+}
+
+nav #nav-logo img {
+  width: 70px;
+}
+
+nav .blog {
+  background-color: #bb0000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav .blog:hover {
+  color: white;
+  background-color: #d10000;
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav-inactive {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#home {
+  background-image: radial-gradient(circle, rgba(60, 60, 60, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("../img/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 90vh;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+#home #nadpis {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home #sec {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+#home h1 {
+  color: white;
+  font-size: 9vw;
+}
+
+#home p {
+  color: white;
+  font-size: 2vw;
+  font-weight: lighter;
+  opacity: 50%;
+}
+
+#home #socials {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+#home #socials i {
+  color: white;
+  font-size: 5vw;
+  padding: 0 15px 0 15px;
+}
+
+#home #socials .fa-twitter {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#home #socials .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+#home #socials .fa-instagram {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#home #socials .fa-instagram:hover {
+  color: #c13584;
+}
+
+#about {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 90vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#about #about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#about h2 {
+  padding: 20px 20px 5px 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#about #few {
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  opacity: 30%;
+}
+
+#about #about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about #about-coding .anim #code-leftbottom {
+  -webkit-animation: code .5s infinite linear alternate;
+          animation: code .5s infinite linear alternate;
+}
+
+#about #about-coding .anim #app-righttop {
+  -webkit-animation: code 1s infinite linear alternate;
+          animation: code 1s infinite linear alternate;
+}
+
+#about .card {
+  background: white;
+  color: black;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 347px;
+}
+
+#about .card h4 {
+  padding: 15px 0px 0px 0px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#about .card p {
+  padding: 20px;
+}
+
+@-webkit-keyframes code {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes code {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  nav #nav-logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav #nav-logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  #about-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-cards .card {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav ul {
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    top: 10vh;
+    height: 91vh;
+    background-color: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .card {
+    max-width: 300px;
+  }
+}
+
+/*Já to říkal*/
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,486 @@
+/* Martine, nic tady nenajdeš */
+/* Ani ty, Štěpáne */
+
+html {
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@import 'home';
+@import 'about';
+
+@media screen and (max-width:1500px) {
+    nav {
+        #nav-logo {
+            flex: 1;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    nav {
+        #nav-logo {
+            flex: 0;
+        }
+    }
+
+    #about-cards {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .card {
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        .burger {
+            display: block;
+        }
+
+        ul {
+            z-index: 3;
+            position: fixed;
+            right: 0;
+            top: 10vh;
+            height: 91vh;
+            background-color: black;
+            flex-direction: column;
+            align-items: center;
+            transform: translate(100%);
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width:365px) {
+    .card {
+        max-width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Já to říkal*/
