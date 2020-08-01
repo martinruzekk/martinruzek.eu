@@ -254,6 +254,71 @@
   margin-bottom: 10px;
 }
 
+#like h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#like h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#like .like-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+#skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 3rem;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#skills .skills-board {
+  background-color: #3e3636;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 7rem;
+  color: white;
+  padding: 30px;
+  border-radius: 2rem;
+}
+
+#skills .skills-board i {
+  margin: 30px;
+}
+
+#skills .skills-board .skills-board-each {
+  font-size: 1rem;
+}
+
 footer {
   height: 100px;
   background: #3e3636;
@@ -328,6 +393,8 @@ section h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .img-text img {
@@ -352,6 +419,8 @@ section h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .text-img img {

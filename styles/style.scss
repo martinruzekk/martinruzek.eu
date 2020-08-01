@@ -3,6 +3,8 @@
 @import 'header';
 @import 'landing';
 @import 'about';
+@import 'like';
+@import 'skills';
 
 @import 'footer';
 
@@ -62,6 +64,7 @@ section {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    flex-wrap: wrap;
 
     img {
         width: 350px;
@@ -81,6 +84,7 @@ section {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    flex-wrap: wrap;
 
     img {
         width: 350px;
