@@ -9,7 +9,50 @@
         text-align: center;
     }
 
+    .like-bg {
+        width: 40%;
+        opacity: .3;
+        transform: scaleX(-1) rotate(-45deg) translate(20%, -20%);
+        position: absolute;
+        left: 35%;
+        overflow: hidden;
+        z-index: -3;
+    }
+
+    position: relative;
+
     .like-wrapper {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .like-each {
+            background: coral;
+            width: 350px;
+            padding: 15px;
+            margin: 30px;
+
+
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            #marvel-logo {
+                width: 100px;
+                align-self: center;
+                margin: 0px 0px 10px 0px;
+            }
+        }
+    }
+
+    .st0 {
+        fill-rule: evenodd;
+        clip-rule: evenodd;
     }
 }

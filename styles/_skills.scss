@@ -28,10 +28,33 @@
 
         i {
             margin: 30px;
+            padding: 0px;
         }
 
         .skills-board-each {
             font-size: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    #skills {
+        .skills-board {
+            i {
+                padding: 20px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 453px) {
+    #skills {
+        .skills-board {
+            i {
+                padding: 10px;
+            }
+        }
+
     }
 }

@@ -8,3 +8,108 @@
     align-items: center;
     flex-direction: column;
 }
+
+.img-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+    img {
+        width: 350px;
+        border-radius: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-left: 30px;
+        width: 50ch;
+        text-align: justify;
+    }
+}
+
+.text-img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+    img {
+        width: 350px;
+        border-radius: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+        width: 50ch;
+        text-align: justify;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1188px) {
+    #about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-text {
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 300px;
+        height: 500px;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 10px;
+        box-shadow: 4px 10px 13px 1px rgba(37, 37, 37, 0.171);
+        margin: 0;
+
+        img {
+            width: 270px;
+            margin: 0;
+        }
+
+        p {
+            max-width: 300px;
+            font-size: 1.5rem;
+            margin: 20px 0px 0px 0px;
+            width: auto;
+        }
+    }
+
+    .text-img {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        max-width: 300px;
+        height: 500px;
+        background-color: white;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        border-radius: 2rem;
+        box-shadow: 4px 10px 13px 1px rgba(37, 37, 37, 0.171);
+
+        img {
+            width: 270px;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            max-width: 300px;
+            font-size: 1.5rem;
+            margin: 20px 0px 0px 0px;
+            width: auto;
+        }
+    }
+}
