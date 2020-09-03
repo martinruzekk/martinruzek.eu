@@ -42,6 +42,10 @@
           box-shadow: 4px 10px 16px 5px rgba(37, 37, 37, 0.171);
 }
 
+#projects .card .card-info p {
+  padding: 7px 0px 7px 0px;
+}
+
 #projects .unDraw {
   width: 100%;
   position: absolute;
