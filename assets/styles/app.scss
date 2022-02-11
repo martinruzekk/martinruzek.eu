@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./helpers/variables";
+
+body {
+    background-color: $lb;
+}
