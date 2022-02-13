@@ -1,0 +1,12 @@
+@import "../helpers/variables";
+
+.btn {
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.btn-red {
+    background-color: $red;
+    color: white;
+}

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @import "./helpers/variables";
+@import "./components/buttons";
 
 body {
-    background-color: $lb;
+    background-color: lightblue;
 }
