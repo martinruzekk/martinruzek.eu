@@ -20,7 +20,8 @@ class RegistraionType extends AbstractType
                 'label' => 'Email',
                 'attr' => [
                     'class' => 'rounded'
-                ]
+                ],
+                'constraints' => []
             ])
             ->add('password', RepeatedType::class, [
                 'type' => PasswordType::class,

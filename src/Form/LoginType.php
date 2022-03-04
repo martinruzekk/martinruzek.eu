@@ -4,20 +4,40 @@ namespace App\Form;
 
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class LoginType extends AbstractType
 {
+    private TranslatorInterface $translator;
+    public function __construct(TranslatorInterface $translator)
+    {
+        $this->translator = $translator;
+    }
+
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
             ->add('email', TextType::class)
-            ->add('password', PasswordType::class)
-            ->add('submit', SubmitType::class);
+            ->add('password', PasswordType::class, [
+                'label' => $this->translator->trans('Password')
+            ])
+            // ->add('csrf', HiddenType::class, [
+            //     'mapped' => false,
+            //     'csrf_field_name' => '_csrf_token',
+            //     'value'
+            // ])
+            ->add('submit', SubmitType::class, [
+                'attr' => [
+                    'class' => 'btn btn-red'
+                ],
+                'label' => 'Login'
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void
