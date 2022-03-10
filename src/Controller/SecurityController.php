@@ -107,14 +107,14 @@ class SecurityController extends AbstractController
     #[Route('/login', name: 'login')]
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
-        $user = new User();
-
-        $form = $this->createForm(LoginType::class, $user);
-
-
         return $this->render('security/login.html.twig', [
-            'form' => $form->createView(),
             'error' => $authenticationUtils->getLastAuthenticationError()
         ]);
+    }
+
+    #[Route('/logout', name: 'logout')]
+    public function logout()
+    {
+        throw new \Exception('Logout should never be reached.');
     }
 }
